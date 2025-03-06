@@ -65,26 +65,31 @@ const Index: React.FC = () => {
           
           {/* Featured Image Section */}
           <section className="container mx-auto px-4 py-12">
-            <div className="w-full max-w-4xl mx-auto glass rounded-xl p-4 overflow-hidden">
+            <div className="w-full max-w-3xl mx-auto glass rounded-xl p-4 overflow-hidden">
               <h2 className="text-2xl font-bold text-center mb-6 text-gradient">Snoop Image AI in Action</h2>
-              <div className="relative aspect-video rounded-lg overflow-hidden hover:shadow-[0_0_30px_rgba(159,21,255,0.4)] transition-all duration-300">
-                <a 
-                  href="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/an-advertisement-for-snoop-image-ai-presented-.png/:/cr=t:5.43%25,l:0%25,w:100%25,h:89.13%25/rs=w:1200,h:600,cg:true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full h-full"
-                >
-                  <img 
-                    src="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/an-advertisement-for-snoop-image-ai-presented-.png/:/cr=t:5.43%25,l:0%25,w:100%25,h:89.13%25/rs=w:1200,h:600,cg:true" 
-                    alt="Snoop Image AI Advertisement" 
-                    className="w-full h-full object-cover rounded-lg transition-transform duration-500 hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <div className="p-4">
-                      <p className="text-white font-medium">Click to view full advertisement</p>
+              <div className="mx-auto w-4/5 md:w-3/4 lg:w-2/3 relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-neon-purple via-neon-blue to-neon-pink rounded-lg blur-md opacity-70 animate-pulse-glow"></div>
+                <div className="relative rounded-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(159,21,255,0.7)]">
+                  <a 
+                    href="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/an-advertisement-for-snoop-image-ai-presented-.png/:/cr=t:5.43%25,l:0%25,w:100%25,h:89.13%25/rs=w:1200,h:600,cg:true"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full h-full p-[2px] bg-gradient-to-r from-neon-purple via-neon-blue to-neon-pink rounded-lg"
+                  >
+                    <div className="relative aspect-video">
+                      <img 
+                        src="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/an-advertisement-for-snoop-image-ai-presented-.png/:/cr=t:5.43%25,l:0%25,w:100%25,h:89.13%25/rs=w:1200,h:600,cg:true" 
+                        alt="Snoop Image AI Advertisement" 
+                        className="w-full h-full object-cover rounded-lg"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                        <div className="p-4">
+                          <p className="text-white font-medium">Click to view full advertisement</p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
             </div>
           </section>
