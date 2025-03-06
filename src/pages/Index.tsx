@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import BackgroundEffect from '../components/BackgroundEffect';
 import Header from '../components/Header';
@@ -67,6 +68,17 @@ const Index: React.FC = () => {
           <section className="container mx-auto px-4 py-12">
             <div className="w-full max-w-3xl mx-auto glass rounded-xl p-4 overflow-hidden">
               <h2 className="text-2xl font-bold text-center mb-6 text-gradient">"Fo' shizzle my nizzle, peep what Snoop's AI can dizzle - spottin' them fake pics like they ain't even trizzle!"</h2>
+              
+              {/* Try It Now Button */}
+              <div className="flex justify-center mb-6">
+                <Link
+                  to="/tool"
+                  className="px-8 py-3 bg-gradient-to-r from-neon-purple to-neon-blue rounded-lg font-bold text-white hover:shadow-[0_0_20px_rgba(159,21,255,0.5)] transition-all transform hover:scale-105"
+                >
+                  Try It Now 🔍
+                </Link>
+              </div>
+              
               <div className="mx-auto w-4/5 md:w-3/4 lg:w-2/3 relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-neon-purple via-neon-blue to-neon-pink rounded-lg blur-md opacity-70 animate-pulse-glow"></div>
                 <div className="relative rounded-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-[0_0_30px_rgba(159,21,255,0.7)]">
