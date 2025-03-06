@@ -62,6 +62,33 @@ const Index: React.FC = () => {
         <Header />
         <main>
           <Hero />
+          
+          {/* Featured Image Section */}
+          <section className="container mx-auto px-4 py-12">
+            <div className="w-full max-w-4xl mx-auto glass rounded-xl p-4 overflow-hidden">
+              <h2 className="text-2xl font-bold text-center mb-6 text-gradient">Snoop Image AI in Action</h2>
+              <div className="relative aspect-video rounded-lg overflow-hidden hover:shadow-[0_0_30px_rgba(159,21,255,0.4)] transition-all duration-300">
+                <a 
+                  href="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/an-advertisement-for-snoop-image-ai-presented-.png/:/cr=t:5.43%25,l:0%25,w:100%25,h:89.13%25/rs=w:1200,h:600,cg:true"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full h-full"
+                >
+                  <img 
+                    src="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/an-advertisement-for-snoop-image-ai-presented-.png/:/cr=t:5.43%25,l:0%25,w:100%25,h:89.13%25/rs=w:1200,h:600,cg:true" 
+                    alt="Snoop Image AI Advertisement" 
+                    className="w-full h-full object-cover rounded-lg transition-transform duration-500 hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                    <div className="p-4">
+                      <p className="text-white font-medium">Click to view full advertisement</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+          
           <Features />
           <Testimonials />
           <FAQ />
@@ -69,16 +96,6 @@ const Index: React.FC = () => {
         </main>
         <Footer />
       </div>
-      
-      {/* Hidden link to the requested image */}
-      <a 
-        href="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/an-advertisement-for-snoop-image-ai-presented-.png/:/cr=t:5.43%25,l:0%25,w:100%25,h:89.13%25/rs=w:1200,h:600,cg:true"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hidden"
-      >
-        AI Web Tools
-      </a>
     </div>
   );
 };

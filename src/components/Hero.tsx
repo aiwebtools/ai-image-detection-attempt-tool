@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { CircleCheck, Scan, BarChart3 } from 'lucide-react';
 
@@ -123,15 +122,6 @@ const Hero: React.FC = () => {
           </div>
         </div>
       </div>
-      
-      <a 
-        href="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/an-advertisement-for-snoop-image-ai-presented-.png/:/cr=t:5.43%25,l:0%25,w:100%25,h:89.13%25/rs=w:1200,h:600,cg:true"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hidden"
-      >
-        {/* Hidden link as requested */}
-      </a>
     </section>
   );
 };

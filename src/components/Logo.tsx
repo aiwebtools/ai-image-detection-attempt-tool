@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Scan, Eye } from 'lucide-react';
+import { Scan } from 'lucide-react';
 
 interface LogoProps {
   className?: string;
@@ -20,7 +20,7 @@ const Logo: React.FC<LogoProps> = ({ className = '', size = 'md' }) => {
         <div className="absolute inset-0 bg-neon-purple blur-sm opacity-50 rounded-full"></div>
         <div className="relative flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-neon-purple to-neon-blue p-0.5">
           <div className="absolute inset-[2px] rounded-full bg-cyberpunk-dark flex items-center justify-center">
-            <Eye className="w-5 h-5 text-neon-blue" />
+            <Scan className="w-5 h-5 text-neon-blue" />
           </div>
         </div>
       </div>
