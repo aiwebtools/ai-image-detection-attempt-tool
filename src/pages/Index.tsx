@@ -29,7 +29,7 @@ const Index: React.FC = () => {
     });
     
     // Set page title
-    document.title = "Snoop Image AI - Detect AI Generated Images";
+    document.title = "Snoop Image AI - AI Generated Image Detection Tool";
     
     // Add meta description
     const metaDescription = document.querySelector('meta[name="description"]');

@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import BackgroundEffect from '../components/BackgroundEffect';
@@ -7,6 +7,17 @@ import { ArrowUpFromLine } from 'lucide-react';
 
 const Tool: React.FC = () => {
   const [isDragging, setIsDragging] = useState<boolean>(false);
+  
+  useEffect(() => {
+    // Set page title for the tool page
+    document.title = "Snoop Image AI - Analyze & Detect AI Images";
+    
+    // Add meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Upload and analyze images with Snoop Image AI to determine if they were created with artificial intelligence. Get detailed authenticity scores.');
+    }
+  }, []);
   
   const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
