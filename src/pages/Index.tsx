@@ -8,9 +8,13 @@ import Testimonials from '../components/Testimonials';
 import FAQ from '../components/FAQ';
 import Disclaimer from '../components/Disclaimer';
 import Footer from '../components/Footer';
+import DisclaimerPopup from '../components/DisclaimerPopup';
+import { useDisclaimerPopup } from '../hooks/useDisclaimerPopup';
 import { Link } from 'react-router-dom';
 
 const Index: React.FC = () => {
+  const { isDisclaimerOpen, closeDisclaimer } = useDisclaimerPopup();
+
   useEffect(() => {
     // Add smooth scroll behavior for internal links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -112,6 +116,9 @@ const Index: React.FC = () => {
         </main>
         <Footer />
       </div>
+      
+      {/* Disclaimer Popup */}
+      <DisclaimerPopup isOpen={isDisclaimerOpen} onClose={closeDisclaimer} />
     </div>
   );
 };
