@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from "framer-motion";
-import { Star, CheckCircle } from 'lucide-react';
+import { Star, CheckCircle, AlertTriangle } from 'lucide-react';
 import { useToast } from "@/hooks/use-toast";
 
 interface DisclaimerPopupProps {
@@ -43,16 +43,27 @@ const DisclaimerPopup: React.FC<DisclaimerPopupProps> = ({ isOpen, onClose }) =>
               <Star className="w-16 h-16 text-neon-yellow opacity-20 animate-pulse-glow" />
             </div>
             
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gradient font-display">
-              DISCLAIMER
-            </h2>
+            <div className="flex items-center gap-3 mb-4">
+              <AlertTriangle className="w-8 h-8 text-amber-400" />
+              <h2 className="text-2xl md:text-3xl font-bold text-gradient font-display">
+                IMPORTANT DISCLAIMER
+              </h2>
+            </div>
             
             <div className="space-y-4 text-white/90 mb-6">
+              <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-3 mb-4">
+                <p className="font-bold text-amber-200 text-center">
+                  ⚠️ NOT 100% ACCURATE ⚠️
+                </p>
+              </div>
+              
               <p className="font-medium">
-                The Snoop Image AI tool is designed to help detect AI-generated images, but the results are not guaranteed to be 100% accurate.
+                Snoop Image AI is an <strong>experimental tool</strong> designed to help detect AI-generated images. 
+                Due to the advanced realism of modern AI-generated visuals, <strong>results are not guaranteed to be 100% accurate</strong>.
               </p>
               <p>
-                By using this tool, you acknowledge that the analysis provided is for informational purposes only and should not be considered as definitive proof of an image's origin.
+                By using this tool, you acknowledge that the analysis provided is for <strong>informational purposes only</strong> 
+                and should not be considered as definitive proof of an image's origin or used for critical decisions.
               </p>
             </div>
             
@@ -63,7 +74,7 @@ const DisclaimerPopup: React.FC<DisclaimerPopupProps> = ({ isOpen, onClose }) =>
               <span className="absolute inset-0 w-full h-full bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
               <span className="relative flex items-center justify-center gap-2">
                 <CheckCircle className="w-5 h-5 group-hover:text-white" />
-                I AGREE
+                I UNDERSTAND & AGREE
               </span>
             </button>
           </div>

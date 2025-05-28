@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { CircleCheck, Scan, BarChart3 } from 'lucide-react';
+import { CircleCheck, Scan, BarChart3, AlertTriangle } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -8,18 +9,30 @@ const Hero: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in-up [animation-delay:200ms]">
             <div className="inline-block px-3 py-1 rounded-full bg-neon-purple/10 border border-neon-purple/20">
-              <p className="text-neon-purple text-sm font-medium">AI Image Detection Tool</p>
+              <p className="text-neon-purple text-sm font-medium">Experimental AI Image Detection Tool</p>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              <span className="block text-gradient">Detect AI-Generated Images</span>
-              <span className="block mt-2 text-white">With Precision & Style</span>
+              <span className="block text-gradient">Snoop Image AI</span>
+              <span className="block mt-2 text-white">Verify Image Authenticity</span>
             </h1>
             
+            <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-4 mb-6">
+              <div className="flex items-start gap-3">
+                <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-amber-200 text-sm font-medium mb-1">Important Notice</p>
+                  <p className="text-amber-100/90 text-sm">
+                    This experimental tool is <strong>not 100% accurate</strong> due to the advanced realism of modern AI-generated visuals.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
             <p className="text-lg text-gray-300 max-w-xl">
-              Fo' shizzle my nizzle! Snoop Image AI be droppin' the realest image analysis 
-              in the game. We detect AI fakery with python-powered precision and 
-              give you the 411 with detailed scores and analysis.
+              Your go-to tool for verifying image authenticity, infused with the unmistakable style of Snoop Dogg. 
+              This experimental tool analyzes images to assess whether they are likely real or AI-generated through 
+              metadata analysis, deep color screening, and precision pixel measurements to offer clues about authenticity.
             </p>
             
             <div className="flex flex-wrap gap-4 pt-2">
@@ -47,15 +60,15 @@ const Hero: React.FC = () => {
             <div className="flex items-center gap-6 pt-2">
               <div className="flex items-center gap-2">
                 <CircleCheck className="w-5 h-5 text-neon-green" />
-                <span className="text-gray-300">Python Powered</span>
+                <span className="text-gray-300">Metadata Analysis</span>
               </div>
               <div className="flex items-center gap-2">
                 <CircleCheck className="w-5 h-5 text-neon-green" />
-                <span className="text-gray-300">Detailed Scores</span>
+                <span className="text-gray-300">Deep Color Screening</span>
               </div>
               <div className="flex items-center gap-2">
                 <CircleCheck className="w-5 h-5 text-neon-green" />
-                <span className="text-gray-300">Visual Analysis</span>
+                <span className="text-gray-300">Pixel Measurements</span>
               </div>
             </div>
           </div>

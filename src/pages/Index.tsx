@@ -71,7 +71,14 @@ const Index: React.FC = () => {
           {/* Featured Image Section */}
           <section className="container mx-auto px-4 py-8 md:py-12">
             <div className="w-full max-w-3xl mx-auto glass rounded-xl p-3 md:p-4 overflow-hidden">
-              <h2 className="text-xl md:text-2xl font-bold text-center mb-4 md:mb-6 text-gradient">"Fo' shizzle my nizzle, peep what Snoop's AI can dizzle - spottin' them fake pics like they ain't even trizzle!"</h2>
+              <h2 className="text-xl md:text-2xl font-bold text-center mb-2 md:mb-4 text-gradient">
+                "Fo' shizzle my nizzle, peep what Snoop's AI can dizzle!"
+              </h2>
+              
+              <p className="text-center text-gray-300 text-sm md:text-base mb-4 md:mb-6 px-2">
+                <span className="text-amber-400 font-semibold">⚠️ Experimental Tool - Not 100% Accurate</span><br/>
+                Spottin' them AI pics with style, but remember - even the dopest tech ain't perfect!
+              </p>
               
               {/* Try It Now Button */}
               <div className="flex justify-center mb-4 md:mb-6">
