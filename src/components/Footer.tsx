@@ -11,6 +11,14 @@ const Footer: React.FC = () => {
       <div className="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-transparent to-cyberpunk-dark z-10 pointer-events-none"></div>
       
       <div className="container px-4 md:px-6 relative z-20">
+        {/* Small disclaimer banner */}
+        <div className="mb-8 p-4 bg-amber-500/10 border border-amber-500/30 rounded-lg">
+          <p className="text-center text-amber-200 text-sm">
+            <strong>Disclaimer:</strong> Snoop Image AI is provided for informational, educational, and research purposes only. 
+            Results are not guaranteed to be 100% accurate and should not be used for critical decisions.
+          </p>
+        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           <div className="space-y-6">
             <Logo size="md" />
@@ -73,7 +81,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a 
-                  href="https://aiwebtools.ai/terms-of-services"
+                  href="https://aiwebtools.lovable.app/disclaimers"
                   target="_blank"
                   rel="noopener noreferrer" 
                   className="text-gray-400 hover:text-neon-blue transition-colors inline-flex items-center gap-1"
