@@ -32,14 +32,22 @@ const Index: React.FC = () => {
       });
     });
     
-    // Set page title
-    document.title = "Snoop Image AI - AI Generated Image Detection Tool";
+    // Enhanced SEO meta tags
+    document.title = "Snoop Image AI - Free AI Image Detection Tool | AI Web Tools";
     
-    // Add meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Snoop Image AI uses advanced Python analysis to detect AI-generated images with detailed scores and analysis. Perfect for creators, journalists, and professionals.');
+      metaDescription.setAttribute('content', 'Free AI image detection tool by AI Web Tools. Detect AI-generated images with advanced Python analysis, metadata screening, and pixel measurement. Professional image authenticity verification.');
     }
+    
+    // Add additional meta keywords
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) {
+      metaKeywords = document.createElement('meta');
+      metaKeywords.setAttribute('name', 'keywords');
+      document.head.appendChild(metaKeywords);
+    }
+    metaKeywords.setAttribute('content', 'ai tools, free ai tools, ai image detection, ai generated image detector, snoop image ai, ai web tools, artificial intelligence tools, image authenticity checker, ai detector free, python ai analysis, deepfake detection, synthetic image detection');
     
     return () => {
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -68,14 +76,14 @@ const Index: React.FC = () => {
         <main>
           <Hero />
           
-          {/* Featured Image Section */}
-          <section className="container mx-auto px-4 py-8 md:py-12">
+          {/* Featured Image Section with SEO optimization */}
+          <section className="container mx-auto px-4 py-8 md:py-12" itemScope itemType="https://schema.org/SoftwareApplication">
             <div className="w-full max-w-3xl mx-auto glass rounded-xl p-3 md:p-4 overflow-hidden">
-              <h2 className="text-xl md:text-2xl font-bold text-center mb-2 md:mb-4 text-gradient">
+              <h2 className="text-xl md:text-2xl font-bold text-center mb-2 md:mb-4 text-gradient" itemProp="name">
                 "Fo' shizzle my nizzle, peep what Snoop's AI can dizzle!"
               </h2>
               
-              <p className="text-center text-gray-300 text-sm md:text-base mb-4 md:mb-6 px-2">
+              <p className="text-center text-gray-300 text-sm md:text-base mb-4 md:mb-6 px-2" itemProp="description">
                 <span className="text-amber-400 font-semibold">⚠️ Experimental Tool - Not 100% Accurate</span><br/>
                 Spottin' them AI pics with style, but remember - even the dopest tech ain't perfect!
               </p>
@@ -85,6 +93,8 @@ const Index: React.FC = () => {
                 <Link
                   to="/tool"
                   className="px-5 py-2.5 md:px-8 md:py-3 bg-gradient-to-r from-neon-purple to-neon-blue rounded-lg font-bold text-white hover:shadow-[0_0_20px_rgba(159,21,255,0.5)] transition-all transform hover:scale-105 text-sm md:text-base"
+                  itemProp="url"
+                  aria-label="Try Snoop Image AI - Free AI Image Detection Tool"
                 >
                   Try It Now 🔍
                 </Link>
@@ -96,13 +106,15 @@ const Index: React.FC = () => {
                   <Link 
                     to="/tool"
                     className="block w-full h-full p-[2px] bg-gradient-to-r from-neon-purple via-neon-blue to-neon-pink rounded-lg"
+                    aria-label="Access Snoop Image AI Detection Tool"
                   >
                     <div className="relative aspect-video">
                       <img 
                         src="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/an-advertisement-for-snoop-image-ai-presented-.png/:/cr=t:5.43%25,l:0%25,w:100%25,h:89.13%25/rs=w:1200,h:600,cg:true" 
-                        alt="Snoop Image AI Advertisement" 
+                        alt="Snoop Image AI - Free AI Image Detection Tool by AI Web Tools" 
                         className="w-full h-full object-cover rounded-lg"
                         loading="lazy"
+                        itemProp="image"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
                         <div className="p-2 md:p-4">
